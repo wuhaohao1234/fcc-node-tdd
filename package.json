@@ -1,0 +1,18 @@
+{
+  "name": "fcc-node-tdd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/wuhaohao1234/fcc-node-tdd.git",
+  "author": "wuhaohao1234 <1611499758@qq.com>",
+  "scripts": {
+    "test": "jest",
+    "cov": "jest --coverage"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-jest": "^24.7.1",
+    "jest": "^24.7.1"
+  }
+}

@@ -108,3 +108,46 @@ TDD 编码方式
 3. 只允许编写刚好能够使一个失败的 unit test 通过的产品代码
 
 ## Example
+
+### 写代码之前要做的事
+
+1. 初始化环境
+
+`yarn init -y`
+
+2. 安装依赖
+
+`yarn add jest babel-jest @babel/core @babel/preset-env -D`
+
+3. 创建文件夹
+
+* src 编辑文件夹
+
+* docs 文档文件夹
+
+* __test__ 测试文件夹
+
+4. 配置babel,让cmd模式兼容es6模式
+
+```
+# babel.config.js
+module.exports = {
+  presets: [
+    [
+      '@babel/preset-env',
+      {
+        targets: {
+          node: 'current',
+        },
+      },
+    ],
+  ],
+};
+```
+
+5. 编写package.json中的scripts
+
+```
+  "test": "jest",
+  "cov": "jest --coverage"
+```
